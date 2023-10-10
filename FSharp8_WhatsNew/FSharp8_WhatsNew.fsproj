@@ -12,6 +12,7 @@
     <Compile Include="WhileBang.fs" />
     <Compile Include="Printing.fs" />
     <Compile Include="ArithmeticLiterals.fs" />
+    <Compile Include="TailCallCheck.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

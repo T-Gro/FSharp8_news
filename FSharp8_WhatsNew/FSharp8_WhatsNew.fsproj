@@ -11,6 +11,7 @@
     <Compile Include="NestedRecordFieldUpdate.fs" />
     <Compile Include="WhileBang.fs" />
     <Compile Include="Printing.fs" />
+    <Compile Include="ArithmeticLiterals.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

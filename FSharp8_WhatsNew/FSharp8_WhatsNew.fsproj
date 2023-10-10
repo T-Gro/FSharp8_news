@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+	  <NoWarn>FS3560</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="UnderscoreDotLambda.fs" />
+    <Compile Include="NestedRecordFieldUpdate.fs" />
+    <Compile Include="WhileBang.fs" />
+    <Compile Include="Printing.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

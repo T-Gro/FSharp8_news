@@ -13,6 +13,8 @@
     <Compile Include="Printing.fs" />
     <Compile Include="ArithmeticLiterals.fs" />
     <Compile Include="TailCallCheck.fs" />
+    <Compile Include="ConstraintIntersectionSyntax.fs" />
+    <Compile Include="ArrayParallel.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

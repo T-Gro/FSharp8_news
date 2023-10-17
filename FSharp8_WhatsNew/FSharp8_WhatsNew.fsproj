@@ -13,6 +13,8 @@
     <Compile Include="WhileBang.fs" />
     <Compile Include="Printing.fs" />
     <Compile Include="ArithmeticLiterals.fs" />
+    <Compile Include="FixedBindings.fs" />
+    <Compile Include="Uniformity.fs" />
     <Compile Include="TailCallCheck.fs" />
     <Compile Include="ConstraintIntersectionSyntax.fs" />
     <Compile Include="ArrayParallel.fs" />

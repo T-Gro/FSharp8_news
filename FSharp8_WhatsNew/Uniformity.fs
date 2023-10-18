@@ -1,6 +1,13 @@
 ﻿module Uniformity
 
 [<Interface>]
+type IDemoableOld =
+    abstract member Show: string -> unit
+
+module IDemoableOld =
+    let autoFormat(a) = sprintf "%A" a
+
+[<Interface>]
 type IDemoable =
     abstract member Show: string -> unit
     static member AutoFormat(a) = sprintf "%A" a

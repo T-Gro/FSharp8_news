@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-	  <NoWarn>FS3560</NoWarn>
-	  <LangVersion>preview</LangVersion>
+	<NoWarn>FS3560</NoWarn>
+	<LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

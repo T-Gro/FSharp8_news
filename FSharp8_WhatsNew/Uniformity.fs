@@ -24,10 +24,15 @@ type AbcDU = A | B | C
             |> Array.map (fun c -> c.Name, FSharpValue.MakeUnion (c,[||]) :?> AbcDU)
         static let stringMap = namesAndValues |> dict
         static let mutable cnt = 0
+        
         static do printfn "Init done! We have %i cases" stringMap.Count
         static member TryParse text = 
             let cnt = Interlocked.Increment(&cnt)
             stringMap.TryGetValue text, sprintf "Parsed %i" cnt
+
+type AnotherDu = D | E
+    with
+        static member  val X = 42 with get,set
 
 AbcDU.TryParse "xxx"
 AbcDU.TryParse "A"

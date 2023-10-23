@@ -1,5 +1,7 @@
 ﻿module ArithmeticLiterals
 
+open System
+
 let [<Literal>] bytesInKB = 2f ** 10f
 let [<Literal>] bytesInMB = bytesInKB * bytesInKB
 let [<Literal>] bytesInGB = 1 <<< 30

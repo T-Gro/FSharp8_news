@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
 	<NoWarn>FS3560</NoWarn>
+	<WarnOn>FS3559</WarnOn>
 	<LangVersion>preview</LangVersion>
   </PropertyGroup>
 
@@ -15,6 +16,7 @@
     <Compile Include="ArithmeticLiterals.fs" />
     <Compile Include="FixedBindings.fs" />
     <Compile Include="Uniformity.fs" />
+    <Compile Include="StringInterpol.fs" />
     <Compile Include="TailCallCheck.fs" />
     <Compile Include="ConstraintIntersectionSyntax.fs" />
     <Compile Include="ArrayParallel.fs" />

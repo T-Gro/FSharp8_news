@@ -47,6 +47,7 @@ let rec f () = seq {
         yield 789
         yield! f()
 }
+
 let first5 = 
     f() 
     |> Seq.take 5 

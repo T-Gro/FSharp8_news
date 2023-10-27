@@ -27,4 +27,6 @@ type Book = {
 
 let oneBook = { Title = "Book1"; Year = 2000; Author = { Name = "Author1"; YearBorn = 1950 } }
 let codeWhichWorks = {oneBook with Book.Author.Name = "Author1Updated"}
+(*
 let codeWhichLeadsToAnError = {oneBook with Author.Name = "Author1Updated"}
+*)

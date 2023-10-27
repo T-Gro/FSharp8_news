@@ -32,7 +32,10 @@ type AbcDU = A | B | C
 
 type AnotherDu = D | E
     with
+        //static val mutable private myXX : int
         static member  val X = 42 with get,set
+         
+        
 
 AbcDU.TryParse "xxx"
 AbcDU.TryParse "A"

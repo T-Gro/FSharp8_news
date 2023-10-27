@@ -2,14 +2,17 @@
 
 let mul x y = x * y
 
-[<TailCall>]
-let rec fact n acc =
-    if n = 0
-    then acc
-    else (fact (n - 1) (mul n acc)) + 23
 
 [<TailCall>]
-let rec fact2 n acc =
-    if n = 0
-    then acc
-    else (fact2 (n - 1) (mul n acc))
+let rec factorialClassic n =
+    match n with
+    | 0u | 1u -> 1u
+    | _ -> n * (factorialClassic (n - 1u))
+
+[<TailCall>]
+let rec factorialWithAcc n accumulator = 
+    match n with
+    | 0u | 1u -> accumulator
+    | _ -> factorialWithAcc (n - 1u) (n * accumulator)
+
+let fact n = factorialWithAcc n 1u

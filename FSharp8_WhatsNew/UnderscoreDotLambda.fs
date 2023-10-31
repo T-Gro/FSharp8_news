@@ -22,3 +22,14 @@ let possibleNow =
 
 let ageAccessor : Person -> int = _.Age
 let getNameLength = _.Name.Length
+
+
+
+/// This is allowed now, but will be disallowed in the near future!
+let lambdaWhichAlwaysReturnsThree = _.3
+let _ = _.1e-04
+let _ = _."🙃"
+let _ = _.[||]
+let _ = _.{||}
+let _ = _.typeof<int>
+let _ = _.null

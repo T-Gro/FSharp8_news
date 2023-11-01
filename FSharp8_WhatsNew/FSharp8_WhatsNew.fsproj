@@ -19,10 +19,13 @@
     <Compile Include="StringInterpol.fs" />
     <Compile Include="TailCallCheck.fs" />
     <Compile Include="ConstraintIntersectionSyntax.fs" />
+    <Compile Include="WarnObj.fs" />
     <Compile Include="ArrayParallel.fs" />
     <Compile Include="ArrayParallelBenchmarkCode.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.9" />

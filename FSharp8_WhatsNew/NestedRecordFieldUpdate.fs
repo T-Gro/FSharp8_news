@@ -11,22 +11,26 @@ let beforeThisFeature x =
                         }
     }
 
-// ------------------- //
-let withTheFeature x = { x with Interior.Steering.Type = "yoke"; Interior.Seats = 5 }
-let alsoWorksForAnonymous (x:Car) = {| x with Interior.Seats = 7; Price = 99_999 |}
+module WithFsharp8 = 
+    let withTheFeature x = 
+        { x with Interior.Steering.Type = "yoke"
+                 Interior.Seats = 5 }
 
-type Author = {
-    Name: string
-    YearBorn: int
-}
-type Book = {
-    Title: string
-    Year: int
-    Author: Author
-}
+    let alsoWorksForAnonymous (x:Car) = 
+        {| x with Interior.Seats = 7
+                  Price = 99_999 |}
 
-let oneBook = { Title = "Book1"; Year = 2000; Author = { Name = "Author1"; YearBorn = 1950 } }
-let codeWhichWorks = {oneBook with Book.Author.Name = "Author1Updated"}
-(*
-let codeWhichLeadsToAnError = {oneBook with Author.Name = "Author1Updated"}
-*)
+    module TypeNamePrefix = 
+        type Author = {
+            Name: string
+            YearBorn: int
+        }
+        type Book = {
+            Title: string
+            Year: int
+            Author: Author
+        }
+        let oneBook = { Title = "Book1"; Year = 2000; Author = { Name = "Author1"; YearBorn = 1950 } }
+        let usedToWorkBefore = {oneBook with Book.Year = 2022}
+        let codeWhichWorksToday = {oneBook with Book.Author.Name = "Author1Updated"}
+  

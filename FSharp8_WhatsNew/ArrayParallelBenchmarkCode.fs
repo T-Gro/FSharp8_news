@@ -2,17 +2,14 @@
 
 open System
 open System.Linq
-open System.Collections.Generic
-open System.Collections.Concurrent
-open System.Threading.Tasks
+
 open BenchmarkDotNet.Attributes
 open BenchmarkDotNet.Running
 open BenchmarkDotNet.Configs
 open BenchmarkDotNet.Reports
 open BenchmarkDotNet.Columns
-open BenchmarkDotNet.Diagnosers
 open BenchmarkDotNet.Order
-open BenchmarkDotNet.Mathematics
+
 
 type MyConfig() as this =
     inherit ManualConfig()

@@ -12,11 +12,11 @@
     <Compile Include="UnderscoreDotLambda.fs" />
     <Compile Include="NestedRecordFieldUpdate.fs" />
     <Compile Include="WhileBang.fs" />
+    <Compile Include="StringInterpol.fs" />
     <Compile Include="Printing.fs" />
     <Compile Include="ArithmeticLiterals.fs" />
     <Compile Include="FixedBindings.fs" />
     <Compile Include="Uniformity.fs" />
-    <Compile Include="StringInterpol.fs" />
     <Compile Include="TailCallCheck.fs" />
     <Compile Include="ConstraintIntersectionSyntax.fs" />
     <Compile Include="WarnObj.fs" />

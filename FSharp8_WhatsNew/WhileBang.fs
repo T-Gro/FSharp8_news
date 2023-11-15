@@ -16,9 +16,11 @@ let doStuffBeforeThisFeature =
        return count
     }
 
-let doStuffWithWhileBang =
-    async {
-        while! asyncCondition do
-            count <- count + 2
-        return count
-    }
+module WithFsharp8 = 
+
+    let doStuffWithWhileBang =
+        async {
+            while! asyncCondition do
+                count <- count + 2
+            return count
+        }

@@ -36,10 +36,11 @@ type AnotherDu = D | E
         static member  val X = 42 with get,set
          
         
+let parsedData =
+    [ AbcDU.TryParse "xxx"
+      AbcDU.TryParse "A"
+      AbcDU.TryParse "B" ]
 
-AbcDU.TryParse "xxx"
-AbcDU.TryParse "A"
-AbcDU.TryParse "B"
 
 let rec f () = seq {
     try 

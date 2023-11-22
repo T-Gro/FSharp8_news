@@ -26,3 +26,8 @@ module WithFsharp8 =
 
     let ageAccessor : Person -> int = _.Age
     let getNameLength = _.Name.Length
+
+    type XXX = {WhatANiceProperty : string}
+
+    let inline myPropGetter (x: 'a when 'a:(member WhatANiceProperty:string)) = 
+        x |> _.WhatANiceProperty

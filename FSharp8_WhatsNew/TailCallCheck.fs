@@ -2,9 +2,7 @@
 
 let mul x y = x * y
 
-
-[<TailCall>]
-let rec factorialClassic n =
+let rec [<TailCall>] factorialClassic n =
     match n with
     | 0u | 1u -> 1u
     | _ -> n * (factorialClassic (n - 1u))

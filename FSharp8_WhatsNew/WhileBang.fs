@@ -1,6 +1,9 @@
 ﻿module WhileBang
 
 let mutable count = 0
+// Emulate a regular check, such as:
+// - polling
+// - reading data in chunks until an end
 let asyncCondition = async {
     return count < 10
 }

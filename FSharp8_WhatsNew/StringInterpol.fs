@@ -2,8 +2,11 @@
 
 let classAttr = "item-panel"
 
-//CSS Copied from SO: .item-panel:hover {background-color: #eee;}
-let cssOld = $""".{classAttr}:hover {{background-color: #eee;}}"""
+//CSS Copied from SO: 
+// .item-panel:hover {background-color: #eee;}
+let cssOld = 
+    $""".{classAttr}:hover {{
+    background-color: #eee;}}"""
 
 (*
 Mustache copied from SO:
@@ -19,7 +22,9 @@ let templateOld = $"""
 
 module WithFsharp8 = 
 
-    let cssNew = $$""".{{classAttr}}:hover {background-color: #eee;}"""
+    let cssNew = 
+        $$""".{{classAttr}}:hover {
+            background-color: #eee;}"""
 
     let templateNew = $$$"""
     <div class="{{{classAttr}}}">
